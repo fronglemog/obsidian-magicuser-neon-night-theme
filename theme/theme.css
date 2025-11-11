@@ -703,12 +703,6 @@ body {
 
   --mu-gallery-callout-icon: '<svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --><path d="m304 45c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142zm-245 240c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142zm245 0c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142z" fill="#00a3ffcf" stroke="none" stroke-width="0"/><path d="m61 47h142c12 0 22 10 22 23v140c0 13-10 23-22 23h-142c-12 0-22-10-22-23v-140c0-13 10-23 22-23z" fill="currentColor" stroke="none" stroke-width="0"/></svg>';
 
-  --mu-reading-glow-color: #00a3ff;
-  --mu-reading-glow-radius-value: 1;
-  --mu-reading-glow-radius: calc(var(--mu-reading-glow-radius-value) * 4px);
-  --mu-reading-glow-border-size-value: 3;
-  --mu-reading-glow-border-size: calc(var(--mu-reading-glow-border-size-value) * 1px);
-
   --mu-reading-indicator-color: #007fffa3;
   --mu-reading-indicator-width-value-rem: 0.3;
   --mu-reading-indicator-width: calc(var(--mu-reading-indicator-width-value-rem) * -1rem);
@@ -3281,13 +3275,6 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
   border-radius: var(--radius-s);
 }
 
-.callout[data-callout="g-gray"] .callout-content>p>span img:hover,
-.callout[data-callout="g-black"] .callout-content>p>span img:hover,
-.callout[data-callout="g-white"] .callout-content>p>span img:hover {
-  border: 2px solid var(--mu-reading-glow-color);
-  cursor: pointer;
-}
-
 .markdown-reading-view .callout[data-callout="g-gray"] .callout-content>p>span img:active,
 .markdown-reading-view .callout[data-callout="g-black"] .callout-content>p>span img:active,
 .markdown-reading-view .callout[data-callout="g-white"] .callout-content>p>span img:active {
@@ -4188,12 +4175,6 @@ body:not(.is-mobile) .inline-title:hover {
 
 .markdown-reading-view>div>div>div:not(.mod-header, .obsidian-banner-wrapper):hover {
   box-shadow: var(--mu-reading-indicator-width) 0 0 0 var(--mu-reading-indicator-color);
-}
-
-body:not(.mu-reading-glow-status-off) .markdown-reading-view>div>div>div:not(.mod-header, .obsidian-banner-wrapper):active {
-  box-shadow: 0 0 0 var(--mu-reading-glow-border-size) var(--mu-reading-glow-color), 0 0 1.2rem .2rem var(--mu-reading-glow-color);
-  border-radius: var(--mu-reading-glow-radius);
-  transition: box-shadow .5s ease-in-out;
 }
 
 body:not(.mu-hide-heading-labels) .markdown-reading-view h1,
@@ -6259,41 +6240,6 @@ div.view-content.node-insert-event .tree-item-children .tree-item-children .tree
 
 div.view-content.node-insert-event .tree-item-children .tree-item-children .tree-item-children .tree-item-children .tree-item-children {
   border-left: 1px solid var(--mu-indent-color-level-5);
-}
-
-/* Reading Glow */
-.reading-glow-blue {
-  --mu-reading-glow-color: #00a3ff;
-}
-
-.reading-glow-green {
-  --mu-reading-glow-color: #00ff88;
-}
-
-.reading-glow-orange {
-  --mu-reading-glow-color: #ff7f00;
-}
-
-.reading-glow-red {
-  --mu-reading-glow-color: #f10000;
-}
-
-.reading-glow-yellow {
-  --mu-reading-glow-color: #ffd700;
-}
-
-.reading-glow-pink {
-  --mu-reading-glow-color: #ff88cf;
-}
-
-.reading-glow-purple {
-  --mu-reading-glow-color: #bf48ff;
-}
-
-/* Reading glow status */
-
-.mu-reading-glow-status-off {
-  --mu-reading-glow-color: transparent;
 }
 
 /* MagicUser Compact Prompt */
@@ -10178,65 +10124,6 @@ settings:
         type: heading
         level: 3
         collapsed: true
-    -
-        id: magicuser-theme-reading-glow
-        title: Reading glow
-        type: heading
-        level: 4
-        collapsed: true
-    -
-        id: mu-reading-glow
-        title: Reading glow color
-        type: class-select
-        description: Reading glow color.
-        allowEmpty: false
-        default: reading-glow-blue
-        options:
-            - 
-                label: Blue glow
-                value: reading-glow-blue
-            - 
-                label: Green glow
-                value: reading-glow-green
-            - 
-                label: Orange glow
-                value: reading-glow-orange
-            - 
-                label: Yellow glow
-                value: reading-glow-yellow
-            - 
-                label: Red glow
-                value: reading-glow-red
-            - 
-                label: Pink glow
-                value: reading-glow-pink
-            - 
-                label: Purple glow
-                value: reading-glow-purple
-    -
-        id: mu-reading-glow-border-size-value
-        title: Reading glow border size
-        description: Reading glow border size (0 = glow only).
-        type: variable-number-slider
-        default: 3
-        min: 0
-        max: 8
-        step: 1
-    -
-        id: mu-reading-glow-radius-value
-        title: Reading glow corners
-        description: Reading glow corners (0 = square corners).
-        type: variable-number-slider
-        default: 1
-        min: 0
-        max: 2
-        step: 0.5
-    -
-        id: mu-reading-glow-status-off
-        title: Turn off reading glow
-        description: Turn off the reading glow effect.
-        type: class-toggle
-        addCommand: true
     -
         id: magicuser-theme-reading-indicator
         title: Reading indicator and labels
