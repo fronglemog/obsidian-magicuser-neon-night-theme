@@ -7283,25 +7283,6 @@ body:not(.is-mobile).mu-cards-interface .workspace-tabs .workspace-leaf .view-co
   color: #f1f1f1 !important;
 }
 
-body.mu-active-line-zoom .view-content .cm-line.cm-active {
-  border: 1px dotted var(--text-faint);
-  font-size: 1.5em;
-  padding: 0;
-  margin-inline-start: 0;
-}
-
-body.mu-active-line-zoom .view-content .cm-line.cm-active .cm-header {
-  font-size: 1.5em !important;
-}
-
-body.mu-active-line-zoom .view-content .cm-line.cm-active input[type=checkbox] {
-  margin-inline-start: 8px;
-}
-
-body.mu-active-line-zoom .markdown-reading-view>div>div>div:not(.mod-header, .obsidian-banner-wrapper):active {
-  font-size: 1.5em !important;
-}
-
 /* Suggestion note */
 .suggestion-item.mod-complex .suggestion-flair,
 .suggestion-item.mod-complex .suggestion-note {
@@ -10170,18 +10151,6 @@ settings:
         opacity: true
         default-light: '#0072d3'
         default-dark: '#0072d3'
-    - 
-        id: magicuser-theme-active-line-zoom
-        title: Active line zoom
-        type: heading
-        level: 3
-        collapsed: true
-    -
-        id: mu-active-line-zoom
-        title: MagicUser active line zoom
-        description: Turn on active line zoom (live preview, source and reading modes).
-        type: class-toggle
-        addCommand: true
     -
         id: magicuser-theme-hover-underline
         title: Hover underline
