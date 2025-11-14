@@ -9985,18 +9985,4 @@ settings:
         title: Auto hide status bar
         description: Auto hide status bar.
         type: class-toggle
-    - 
-        id: magicuser-theme-about
-        title: MagicUser theme
-        type: heading
-        description: Made with ♥ by Bernardo Pires.
-        level: 2
-        collapsed: true
-    - 
-        id: my-info-text
-        title: MagicUser theme for Obsidian
-        description: Made with ♥ by Bernardo Pires (@drbap). I hope you enjoy. Thanks for using it.
-        type: info-text
-        markdown: false
-
 */
