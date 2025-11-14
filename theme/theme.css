@@ -799,7 +799,6 @@ body {
   --mu-num-table-bg-col: #00000082;
 
   --mu-column-stripped-background: #00000082;
-  --mu-o-ui-border: #0072d3;
   --mu-tag-border-color: #0072d3;
 
   --mu-divider-color-hover: #007fff;
@@ -7203,36 +7202,6 @@ blockquote {
   white-space: break-spaces;
 }
 
-/* Outline UI */
-body.mu-o-ui-sidebars .workspace-split:is(.mod-left-split, .mod-right-split) .workspace-leaf {
-  border: 1px solid var(--mu-o-ui-border);
-}
-
-body.mu-o-ui-sidebars.mu-cards-interface .workspace-split:is(.mod-left-split, .mod-right-split) .workspace-leaf {
-  border-radius: var(--size-4-2);
-}
-
-body.mu-o-ui-sidebars .search-row {
-  border-bottom: 1px solid var(--mu-o-ui-border);
-  margin: 0;
-  padding: var(--size-4-2);
-  padding-bottom: 4px;
-}
-
-body.mu-o-ui-sidebars .nav-header {
-  border-bottom: 1px solid var(--mu-o-ui-border);
-  margin-bottom: var(--size-4-1);
-}
-
-body.mu-o-ui-sidebars .status-bar {
-  border-top: 1px solid var(--mu-o-ui-border);
-  border-left: 1px solid var(--mu-o-ui-border);
-}
-
-body.mu-o-ui-icons .workspace-split:is(.mod-left-split, .mod-right-split) .is-active {
-  border: 1px solid var(--mu-o-ui-border);
-}
-
 /* Tags */
 a.tag,
 .cm-formatting-hashtag.cm-hashtag.cm-hashtag-begin.cm-meta,
@@ -9877,25 +9846,6 @@ settings:
         description: Activate cards user interface.
         type: class-toggle
         addCommand: true
-    -
-        id: mu-o-ui-sidebars
-        title: Outline UI - sidebars
-        description: Add borders to left and right sidebars.
-        type: class-toggle
-    -
-        id: mu-o-ui-icons
-        title: Outline UI - active icons
-        description: Add borders to active icons and elements.
-        type: class-toggle
-    -
-        id: mu-o-ui-border
-        title: Outline UI - border color
-        type: variable-themed-color
-        description: Select border color of outline UI elements.
-        format: hex
-        opacity: true
-        default-light: '#0072d3'
-        default-dark: '#0072d3'
     -
         id: magicuser-theme-hover-underline
         title: Hover underline
