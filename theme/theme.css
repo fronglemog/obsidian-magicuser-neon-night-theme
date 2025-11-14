@@ -768,13 +768,6 @@ body {
   --mu-default-mode-border-value: 1;
   --mu-default-mode-border-width: calc(var(--mu-default-mode-border-value) * 1px);
 
-  --mu-hover-underline-color: #ff0000cf;
-  --mu-hover-underline-style: solid;
-  --mu-hover-underline-thickness-value: 2;
-  --mu-hover-underline-thickness: calc(var(--mu-hover-underline-thickness-value)*1px);
-  --mu-hover-underline-offset-value: 2;
-  --mu-hover-underline-offset: calc(var(--mu-hover-underline-offset-value)*1px);
-
   --mu-amulet-hue: 224;
   --mu-amulet-sat-value: 50;
   --mu-amulet-sat: calc(var(--mu-amulet-sat-value) * 1%);
@@ -6832,29 +6825,6 @@ input.pdf-page-input {
   background-color: var(--mu-background-color-2);
 }
 
-/* Reading hover underline */
-body.mu-hover-underline .markdown-reading-view .markdown-preview-sizer *:not(.mod-header, .inline-title):hover,
-body.mu-hover-underline .markdown-source-view.mod-cm6.is-readable-line-width .cm-content *:hover {
-  text-decoration: underline;
-  text-decoration-color: var(--mu-hover-underline-color) !important;
-  text-decoration-skip-ink: none;
-  text-decoration-style: var(--mu-hover-underline-style) !important;
-  text-decoration-thickness: var(--mu-hover-underline-thickness) !important;
-  text-underline-offset: var(--mu-hover-underline-offset) !important;
-}
-
-.mu-hover-underline-style-dashed {
-  --mu-hover-underline-style: dashed;
-}
-
-.mu-hover-underline-style-dotted {
-  --mu-hover-underline-style: dotted;
-}
-
-.mu-hover-underline-style-double {
-  --mu-hover-underline-style: double;
-}
-
 /* 
 cssclasses:
 readable line width enabled 
@@ -9823,65 +9793,6 @@ settings:
         description: Activate cards user interface.
         type: class-toggle
         addCommand: true
-    -
-        id: magicuser-theme-hover-underline
-        title: Hover underline
-        type: heading
-        level: 3
-        collapsed: true
-    -
-        id: mu-hover-underline
-        title: Hover underline
-        description: Turn on hover underline (live preview, source and reading modes).
-        type: class-toggle
-        addCommand: true
-    -
-        id: mu-hover-underline-style
-        title: Hover underline style
-        type: class-select
-        description: Select hover underline style.
-        allowEmpty: false
-        default: none
-        options:
-            - 
-                label: Default
-                value: none
-            - 
-                label: Dashed
-                value: mu-hover-underline-style-dashed
-            - 
-                label: Dotted
-                value: mu-hover-underline-style-dotted
-            - 
-                label: Double
-                value: mu-hover-underline-style-double
-    - 
-        id: mu-hover-underline-color
-        title: Hover underline color
-        type: variable-themed-color
-        description: Select hover underline color.
-        format: hex
-        opacity: true
-        default-light: '#ff0000cf'
-        default-dark: '#ff0000cf'
-    - 
-        id: mu-hover-underline-thickness-value
-        title: Hover underline thickness
-        description: Select hover underline thickness.
-        type: variable-number-slider
-        default: 2
-        min: 1
-        max: 5
-        step: 1
-    -
-        id: mu-hover-underline-offset-value
-        title: Gap between text and hover underline
-        description: Select the gap between text and hover underline.
-        type: variable-number-slider
-        default: 2
-        min: 0
-        max: 5
-        step: 1
     -
         id: magicuser-theme-line-highlight
         title: Line highlight
