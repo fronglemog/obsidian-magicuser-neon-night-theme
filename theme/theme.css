@@ -768,10 +768,6 @@ body {
   --mu-default-mode-border-value: 1;
   --mu-default-mode-border-width: calc(var(--mu-default-mode-border-value) * 1px);
 
-  --mu-amulet-hue: 224;
-  --mu-amulet-sat-value: 50;
-  --mu-amulet-sat: calc(var(--mu-amulet-sat-value) * 1%);
-
   --mu-titlebar-button-fg: var(--mu-icon);
   --mu-menu-separator-color: #0072d322;
 
@@ -4643,70 +4639,6 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --prompt-border-color: #282828;
 }
 
-/* Chroma Amulet */
-.theme-light.magicuser-chroma-amulet-theme {
-  --amulet-icon-color: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 33%);
-  --amulet-title-color: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 42%);
-  --mu-background-color-1: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 90%);
-  --mu-background-color-2: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 82%);
-  --mu-titlebar-background: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 80%);
-  --mu-caret-color: #0072d3;
-  --mu-divider-color: #00000000;
-  --mu-input-bg-color: #fff;
-  --mu-text-title: var(--amulet-title-color);
-  --mu-vault-title: var(--amulet-title-color);
-  --code-background: #f1f1f1;
-  --code-punctuation: var(--amulet-title-color);
-  --mu-folder-text-color: #0048a3;
-  --mu-h1: #0048a3;
-  --mu-h2: #0048a3;
-  --mu-h3: #0048a3;
-  --mu-h4: #0048a3;
-  --mu-h5: #0048a3;
-  --mu-h6: #0048a3;
-  --mu-suggestion-color: #0072d3;
-  --mu-text-selection: #0088ff53;
-  --mu-dark-sidebar-color: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 8%);
-  --mu-icon: var(--amulet-icon-color);
-  --mu-icon-hover: var(--amulet-icon-color);
-  --mu-icon-active: #0072d3;
-  --mu-icon-focused: #0072d3;
-  --search-icon-color: var(--amulet-icon-color);
-  --mu-icon-statusbar-menu: var(--amulet-icon-color);
-  --mu-table-th-background: var(--amulet-icon-color);
-}
-
-.theme-dark.magicuser-chroma-amulet-theme {
-  --amulet-icon-color: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 33%);
-  --amulet-title-color: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 42%);
-  --mu-background-color-1: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 10%);
-  --mu-background-color-2: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 8%);
-  --mu-titlebar-background: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 6%);
-  --mu-caret-color: #00cfff;
-  --mu-divider-color: #00000000;
-  --mu-input-bg-color: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 4%);
-  --mu-text-title: var(--amulet-title-color);
-  --mu-vault-title: var(--amulet-title-color);
-  --code-background: #000;
-  --code-punctuation: var(--amulet-title-color);
-  --mu-folder-text-color: #72b1ff;
-  --mu-h1: #00a3ff;
-  --mu-h2: #00a3ff;
-  --mu-h3: #00a3ff;
-  --mu-h4: #00a3ff;
-  --mu-h5: #00a3ff;
-  --mu-h6: #00a3ff;
-  --mu-suggestion-color: #00cfff;
-  --mu-text-selection: #0088ff53;
-  --mu-icon: var(--amulet-icon-color);
-  --mu-icon-hover: var(--amulet-icon-color);
-  --mu-icon-active: #0072d3;
-  --mu-icon-focused: #0072d3;
-  --search-icon-color: var(--amulet-icon-color);
-  --mu-icon-statusbar-menu: var(--amulet-icon-color);
-  --mu-table-th-background: var(--amulet-icon-color);
-}
-
 /* Accent */
 .theme-light.magicuser-accent-theme {
   --mu-accent-color: hsla(var(--color-accent-hsl), 1);
@@ -5094,12 +5026,6 @@ body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-accent-theme
   --mu-folder-text-color: #979797;
   --mu-bg-search-results: #181818;
   --nav-collapse-icon-color: #484848;
-}
-
-body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-chroma-amulet-theme {
-  --mu-folder-text-color: #72b1ff;
-  --mu-bg-search-results: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 10%);
-  --mu-titlebar-background: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 6%);
 }
 
 body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-bg-north-pole-theme,
@@ -7840,9 +7766,6 @@ settings:
                 label: MagicUser Stealth
                 value: magicuser-stealth-theme
             - 
-                label: MagicUser Chroma Amulet
-                value: magicuser-chroma-amulet-theme
-            - 
                 label: MagicUser Accent
                 value: magicuser-accent-theme
             - 
@@ -7869,24 +7792,6 @@ settings:
             - 
                 label: MagicUser BG Old School
                 value: magicuser-bg-old-school-theme
-    - 
-        id: mu-amulet-hue
-        title: Chroma Amulet - color
-        description: MagicUser Chroma Amulet preset theme - select color.
-        type: variable-number-slider
-        default: 224
-        min: 0
-        max: 360
-        step: 1
-    - 
-        id: mu-amulet-sat-value
-        title: Chroma Amulet - saturation
-        description: MagicUser Chroma Amulet preset theme - select saturation.
-        type: variable-number-slider
-        default: 50
-        min: 0
-        max: 100
-        step: 1
     -
         id: mu-bg-image-overlay
         title: BG themes (dark mode) - darken background
