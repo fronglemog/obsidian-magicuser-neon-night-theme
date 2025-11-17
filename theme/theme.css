@@ -1143,29 +1143,32 @@ body:not(.is-mobile) button:not(.mod-cta, .clickable-icon.view-action, .clickabl
   color: var(--mu-suggestion-color);
 }
 
+/* Dark theme settings */
+/* ======================================================== */
 .theme-dark {
-  --mu-background-color-1: #002248;
-  --mu-background-color-2: #001122;
-  --mu-titlebar-background: #003388;
+  --mu-background-color-1: #001122;
+  --mu-background-color-2: #000b15;
+  --mu-titlebar-background: #001a33;
   --mu-color-lig: #007fff;
   --mu-gray-1: #a3a3a3;
   --mu-purple-1: #d372ff;
   --mu-purple-2: #a273d8;
   --mu-magenta-1: #f100f1;
   --mu-hr-color: #0072d3;
+  --text-normal: #c1c1c1;
   --mu-text-1: #f1f1f1;
-  --mu-text-title: hsl(278, 80%, 60%);
+  --mu-text-title: #a300cf;
   --mu-text-bold: inherit;
   --mu-text-italic: inherit;
   --mu-blockquote-background: #cfcfcf20;
   --mu-blockquote-border: #007fff;
-  --mu-divider-color: #007fff10;
-  --mu-h1: #00a3ff;
-  --mu-h2: #00a3ff;
-  --mu-h3: #00a3ff;
-  --mu-h4: #00a3ff;
-  --mu-h5: #00a3ff;
-  --mu-h6: #00a3ff;
+  --mu-divider-color: #dfc1c100;
+  --mu-h1: #729fd8;
+  --mu-h2: #729fd8;
+  --mu-h3: #729fd8;
+  --mu-h4: #729fd8;
+  --mu-h5: #729fd8;
+  --mu-h6: #729fd8;
   --mu-green-1: #20f120;
   --mu-green-2: #20a320;
   --mu-icon: #5382d3;
@@ -1174,8 +1177,8 @@ body:not(.is-mobile) button:not(.mod-cta, .clickable-icon.view-action, .clickabl
   --mu-icon-focused: #00a3ff;
   --mu-icon-statusbar-menu: #0072d3;
   --mu-titlebar-text: #f1f1f1;
-  --mu-vault-title: var(--mu-purple-2);
-  --mu-folder-text-color: #72a3ff;
+  --mu-vault-title: #a300cf;
+  --mu-folder-text-color: #729fd8;
   --mu-link: #d372ff;
   --mu-link-hover: #db8fff;
   --mu-external-link: #00a9dd;
@@ -1185,6 +1188,8 @@ body:not(.is-mobile) button:not(.mod-cta, .clickable-icon.view-action, .clickabl
   --mu-notes-icon-zoom: 72%;
   --interactive-normal: var(--mu-background-color-2);
   --interactive-hover: var(--background-modifier-hover);
+  --code-background: #000;
+  --code-punctuation: #a300a3;
   --mu-code-attribute: #ffa3a3;
   --mu-input-bg-color: #001836;
   --mu-label-h1: #a35fbf;
@@ -1193,10 +1198,10 @@ body:not(.is-mobile) button:not(.mod-cta, .clickable-icon.view-action, .clickabl
   --mu-label-h4: #a35fbf;
   --mu-label-h5: #a35fbf;
   --mu-label-h6: #a35fbf;
-  --mu-text-selection: #0051f1a3;
+  --mu-text-selection: #bf48ff55;
   --mu-special-folder-color: #000;
-  --mu-suggestion-color: #00d3ff;
-  --mu-caret-color: #00cfff;
+  --mu-suggestion-color: #00a3ff;
+  --mu-caret-color: #d300ff;
   /* highlight blend mode */
   --highlight-mix-blend-mode: normal;
   --background-primary-alt: #212121;
@@ -1210,10 +1215,8 @@ body:not(.is-mobile) button:not(.mod-cta, .clickable-icon.view-action, .clickabl
   --mu-scrollbar-thumb-bg: #84848422;
   --mu-scrollbar-thumb-bg-hover: #84848433;
   --mu-scrollbar-track-bg-hover: #00000021;
+  --mu-table-th-background: #001a33;
 }
-
-/* Dark theme settings */
-/* ======================================================== */
 
 .theme-dark .workspace-tabs.workspace-leaf {
   background-color: var(--mu-background-color-2);
@@ -1235,9 +1238,9 @@ body:not(.is-mobile) button:not(.mod-cta, .clickable-icon.view-action, .clickabl
 /* ======================================================== */
 
 .theme-light {
-  --mu-background-color-1: #e8efff;
-  --mu-background-color-2: #d1dfff;
-  --mu-titlebar-background: #003388;
+  --mu-background-color-1: #d2e1f1;
+  --mu-background-color-2: #c3d6ea;
+  --mu-titlebar-background: #001a33;
   --mu-color-lig: #007fff;
   --mu-gray-1: #a3a3a3;
   --mu-purple-1: #d372ff;
@@ -1250,13 +1253,13 @@ body:not(.is-mobile) button:not(.mod-cta, .clickable-icon.view-action, .clickabl
   --mu-text-italic: inherit;
   --mu-blockquote-background: #cfcfcf88;
   --mu-blockquote-border: #007fff;
-  --mu-divider-color: #007fff10;
-  --mu-h1: #0072d3;
-  --mu-h2: #0072d3;
-  --mu-h3: #0072d3;
-  --mu-h4: #0072d3;
-  --mu-h5: #0072d3;
-  --mu-h6: #0072d3;
+  --mu-divider-color: #00000000;
+  --mu-h1: #0048a3;
+  --mu-h2: #0048a3;
+  --mu-h3: #0048a3;
+  --mu-h4: #0048a3;
+  --mu-h5: #0048a3;
+  --mu-h6: #0048a3;
   --mu-green-1: #20cf20;
   --mu-green-2: #20a320;
   --mu-icon: #5382d3;
@@ -1279,11 +1282,11 @@ body:not(.is-mobile) button:not(.mod-cta, .clickable-icon.view-action, .clickabl
   --mu-label-h4: #bf72d8;
   --mu-label-h5: #bf72d8;
   --mu-label-h6: #bf72d8;
-  --mu-caret-color: #cf00ff;
+  --mu-caret-color: #d300ff;
   /* Code */
   --code-white-space: pre-wrap;
   --code-size: var(--font-smaller);
-  --code-background: #f1f1ff;
+  --code-background: #e1e1e1;
   --code-normal: var(--mu-text-1);
   --code-comment: #a3a3a3;
   --code-function: #00a300;
@@ -1291,7 +1294,7 @@ body:not(.is-mobile) button:not(.mod-cta, .clickable-icon.view-action, .clickabl
   --code-keyword: #c300f1;
   --code-operator: #c300f1;
   --code-property: #0048a3;
-  --code-punctuation: #c300f1;
+  --code-punctuation: #a300a3;
   --code-string: #0000f1;
   --code-tag: #c300f1;
   --code-value: #f18f00;
@@ -1300,7 +1303,7 @@ body:not(.is-mobile) button:not(.mod-cta, .clickable-icon.view-action, .clickabl
   --mu-notes-icon-zoom: 72%;
   --text-normal: #000;
   --text-muted: #353535;
-  --mu-text-selection: #0051f136;
+  --mu-text-selection: #bf48ff33;
   --mu-suggestion-color: #0072d3;
   --mu-special-folder-color: #000;
   --interactive-normal: var(--mu-background-color-2);
@@ -1319,6 +1322,9 @@ body:not(.is-mobile) button:not(.mod-cta, .clickable-icon.view-action, .clickabl
   --mu-scrollbar-thumb-bg: #48484822;
   --mu-scrollbar-thumb-bg-hover: #48484833;
   --mu-scrollbar-track-bg-hover: #82828221;
+
+  --mu-dark-sidebar-color: #000b15;
+  --mu-table-th-background: #001a33;
 }
 
 .theme-light .workspace-tabs .workspace-leaf {
@@ -4171,64 +4177,6 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   padding-top: 0;
 }
 
-/* Themes */
-
-/* Moon */
-.theme-light.magicuser-moon-theme {
-  --mu-background-color-1: #d2e1f1;
-  --mu-background-color-2: #c3d6ea;
-  --mu-caret-color: #d300ff;
-  --mu-divider-color: #00000000;
-  --mu-input-bg-color: #fff;
-  --mu-folder-text-color: #0048a3;
-  --mu-text-title: #a300cf;
-  --mu-titlebar-background: #001a33;
-  --mu-vault-title: #a300cf;
-  --code-background: #e1e1e1;
-  --code-punctuation: #a300a3;
-  --mu-h1: #0048a3;
-  --mu-h2: #0048a3;
-  --mu-h3: #0048a3;
-  --mu-h4: #0048a3;
-  --mu-h5: #0048a3;
-  --mu-h6: #0048a3;
-  --mu-text-selection: #bf48ff33;
-  --mu-suggestion-color: #0072d3;
-  --mu-dark-sidebar-color: #000b15;
-  --mu-table-th-background: #001a33;
-}
-
-.theme-dark.magicuser-moon-theme {
-  --mu-background-color-1: #001122;
-  --mu-background-color-2: #000b15;
-  --mu-caret-color: #d300ff;
-  --mu-divider-color: #dfc1c100;
-  --mu-input-bg-color: #001836;
-  --mu-folder-text-color: #729fd8;
-  --mu-text-title: #a300cf;
-  --mu-titlebar-background: #001a33;
-  --mu-vault-title: #a300cf;
-  --code-background: #000;
-  --code-punctuation: #a300a3;
-  --mu-h1: #729fd8;
-  --mu-h2: #729fd8;
-  --mu-h3: #729fd8;
-  --mu-h4: #729fd8;
-  --mu-h5: #729fd8;
-  --mu-h6: #729fd8;
-  --mu-text-selection: #bf48ff55;
-  --text-normal: #c1c1c1;
-  --mu-suggestion-color: #00a3ff;
-  --mu-table-th-background: #001a33;
-}
-
-/* Sidebar adjustment - light mode */
-
-body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-moon-theme {
-  --mu-folder-text-color: #729fd8 !important;
-  --mu-bg-search-results: #001122;
-}
-
 /* Frontmatter md */
 .cm-hmd-frontmatter.cm-hmd-frontmatter.cm-def {
   color: var(--code-comment);
@@ -6827,26 +6775,6 @@ name: MagicUser theme
 id: magicuser-theme-for-obsidian
 settings:
     -
-        id: magicuser-theme-presets
-        title: Preset themes
-        type: heading
-        description: MagicUser preset themes.
-        level: 2
-        collapsed: true
-    -
-        id: mu-presets-themes
-        title: Preset theme
-        type: class-select
-        allowEmpty: false
-        default: none
-        options:
-            - 
-                label: MagicUser
-                value: none
-            - 
-                label: MagicUser Moon
-                value: magicuser-moon-theme
-    -
         id: magicuser-theme-main-colors
         title: Main theme colors
         description: Background colors, caret and more core theme colors.
@@ -6861,7 +6789,7 @@ settings:
         format: hex
         opacity: false
         default-light: '#003388'
-        default-dark: '#003388'
+        default-dark: '#001A33'
     -
         id: mu-background-color-1
         title: Primary background color
@@ -6870,7 +6798,7 @@ settings:
         format: hex
         opacity: false
         default-light: '#e8efff'
-        default-dark: '#002248'
+        default-dark: '#000B15'
     -
         id: mu-background-color-2
         title: Secondary background color
