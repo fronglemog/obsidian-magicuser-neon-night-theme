@@ -741,7 +741,6 @@ body {
 
   --mu-neon-mode-glow-value: 0.5;
   --mu-neon-mode-glow-intensity: calc(var(--mu-neon-mode-glow-value) * 1em);
-  --mu-bg-image-overlay: 0.0;
 
   /* MU Tables */
   --mu-table-outer-border-width-value: 2;
@@ -6847,15 +6846,6 @@ settings:
             - 
                 label: MagicUser Moon
                 value: magicuser-moon-theme
-    -
-        id: mu-bg-image-overlay
-        title: BG themes (dark mode) - darken background
-        description: MagicUser BG preset themes (dark mode) - darken background.
-        type: variable-number-slider
-        default: 0.0
-        min: 0.0
-        max: 0.90
-        step: .05
     -
         id: magicuser-theme-main-colors
         title: Main theme colors
