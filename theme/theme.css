@@ -686,8 +686,6 @@ body {
   --mu-callout-link: 48, 142, 255;
   --mu-quote-icon: '<svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --><path d="m185 89.2-124 177a84.4 91.3 0 0 0-15.6 22.2l-5.09 7.26 2.05-0.186a84.4 91.3 0 0 0-7.11 35.9 84.4 91.3 0 0 0 84.4 91.3 84.4 91.3 0 0 0 84.4-91.3 84.4 91.3 0 0 0-36.5-74.8l103-167zm206 0-124 177a84.4 91.3 0 0 0-15.6 22.2l-5.09 7.25 2.05-0.186a84.4 91.3 0 0 0-7.11 35.9 84.4 91.3 0 0 0 84.4 91.3 84.4 91.3 0 0 0 84.4-91.3 84.4 91.3 0 0 0-36.5-74.8l103-167z" fill="currentColor" stroke="currentColor"/></svg>';
   --mu-box-callout-icon: '<svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --><path d="m135 97.8h242c20.6 0 37.3 17.2 37.3 38.7v239c0 21.4-16.6 38.7-37.3 38.7h-242c-20.6 0-37.3-17.2-37.3-38.7v-239c0-21.4 16.6-38.7 37.3-38.7z" fill="currentColor" fill-rule="evenodd"/></svg>';
-  --mu-line-highlight-border: transparent;
-  --mu-line-highlight-background: transparent;
 
   --mu-folder-icon-opened-default: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></svg>');
   --mu-folder-icon-closed-default: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></svg>');
@@ -702,16 +700,6 @@ body {
   --mu-folder-icon-closed-selected: var(--mu-folder-icon-closed-default);
 
   --mu-gallery-callout-icon: '<svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --><path d="m304 45c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142zm-245 240c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142zm245 0c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142z" fill="#00a3ffcf" stroke="none" stroke-width="0"/><path d="m61 47h142c12 0 22 10 22 23v140c0 13-10 23-22 23h-142c-12 0-22-10-22-23v-140c0-13 10-23 22-23z" fill="currentColor" stroke="none" stroke-width="0"/></svg>';
-
-  --mu-reading-glow-color: #00a3ff;
-  --mu-reading-glow-radius-value: 1;
-  --mu-reading-glow-radius: calc(var(--mu-reading-glow-radius-value) * 4px);
-  --mu-reading-glow-border-size-value: 3;
-  --mu-reading-glow-border-size: calc(var(--mu-reading-glow-border-size-value) * 1px);
-
-  --mu-reading-indicator-color: #007fffa3;
-  --mu-reading-indicator-width-value-rem: 0.3;
-  --mu-reading-indicator-width: calc(var(--mu-reading-indicator-width-value-rem) * -1rem);
 
   --mu-indent-color-level-1: #007fff7f;
   --mu-indent-color-level-2: #d372ff7f;
@@ -774,25 +762,6 @@ body {
   --mu-default-mode-border-value: 1;
   --mu-default-mode-border-width: calc(var(--mu-default-mode-border-value) * 1px);
 
-  --mu-laser-top-value: 50;
-  --mu-laser-top: calc(var(--mu-laser-top-value) * 1%);
-  --mu-laser-color-bg: #80ffaa;
-  --mu-laser-color-glow: #00ff55;
-  --mu-laser-intensity: 1.5;
-  --mu-laser-area-value: 82;
-  --mu-laser-area: calc(var(--mu-laser-area-value) * 1px);
-
-  --mu-hover-underline-color: #ff0000cf;
-  --mu-hover-underline-style: solid;
-  --mu-hover-underline-thickness-value: 2;
-  --mu-hover-underline-thickness: calc(var(--mu-hover-underline-thickness-value)*1px);
-  --mu-hover-underline-offset-value: 2;
-  --mu-hover-underline-offset: calc(var(--mu-hover-underline-offset-value)*1px);
-
-  --mu-amulet-hue: 224;
-  --mu-amulet-sat-value: 50;
-  --mu-amulet-sat: calc(var(--mu-amulet-sat-value) * 1%);
-
   --mu-titlebar-button-fg: var(--mu-icon);
   --mu-menu-separator-color: #0072d322;
 
@@ -850,7 +819,6 @@ body {
   --mu-sidebar-pane-numbers: #007fff;
 
   --mu-cards-border: var(--mu-background-color-1);
-  --mu-warm-screen-mode: 0;
 }
 
 body::before {
@@ -860,7 +828,6 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 225, 170, var(--mu-warm-screen-mode));
   mix-blend-mode: multiply;
   z-index: 10000;
   pointer-events: none;
@@ -1002,12 +969,6 @@ span.is-flashing {
 
 .setting-hotkey {
   background-color: var(--mu-background-color-2);
-}
-
-.cm-active.HyperMD-codeblock.HyperMD-codeblock-bg.cm-line,
-.cm-active:not(.cm-gutterElement) {
-  box-shadow: inset 0 0 2px 2px var(--mu-line-highlight-border);
-  background-color: var(--mu-line-highlight-background);
 }
 
 .cm-gutterElement.cm-active {
@@ -1228,12 +1189,6 @@ body:not(.is-mobile) button:not(.mod-cta, .clickable-icon.view-action, .clickabl
   --interactive-hover: var(--background-modifier-hover);
   --mu-code-attribute: #ffa3a3;
   --mu-input-bg-color: #001836;
-  --mu-label-h1: #a35fbf;
-  --mu-label-h2: #a35fbf;
-  --mu-label-h3: #a35fbf;
-  --mu-label-h4: #a35fbf;
-  --mu-label-h5: #a35fbf;
-  --mu-label-h6: #a35fbf;
   --mu-text-selection: #0051f1a3;
   --mu-special-folder-color: #000;
   --mu-suggestion-color: #00d3ff;
@@ -1314,12 +1269,6 @@ body:not(.is-mobile) button:not(.mod-cta, .clickable-icon.view-action, .clickabl
   --mu-external-link-hover: #00a3ff;
   --mu-code-attribute: #e50000;
   --mu-input-bg-color: #fff;
-  --mu-label-h1: #bf72d8;
-  --mu-label-h2: #bf72d8;
-  --mu-label-h3: #bf72d8;
-  --mu-label-h4: #bf72d8;
-  --mu-label-h5: #bf72d8;
-  --mu-label-h6: #bf72d8;
   --mu-caret-color: #cf00ff;
   /* Code */
   --code-white-space: pre-wrap;
@@ -3292,7 +3241,7 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 .callout[data-callout="g-gray"] .callout-content>p>span img:hover,
 .callout[data-callout="g-black"] .callout-content>p>span img:hover,
 .callout[data-callout="g-white"] .callout-content>p>span img:hover {
-  border: 2px solid var(--mu-reading-glow-color);
+  border: 2px solid #00a3ff;
   cursor: pointer;
 }
 
@@ -3927,87 +3876,7 @@ input[type=date] {
   font-weight: var(--font-bold);
 }
 
-/* Line highlight */
-.line-highlight-border-default {
-  --mu-line-highlight-border: transparent;
-}
-
-.line-highlight-border-blue {
-  --mu-line-highlight-border: #007fff48;
-}
-
-.line-highlight-border-green {
-  --mu-line-highlight-border: #00cf0048;
-}
-
-.line-highlight-border-orange {
-  --mu-line-highlight-border: #ff7f0048;
-}
-
-.line-highlight-border-yellow {
-  --mu-line-highlight-border: #ffd70048;
-}
-
-.line-highlight-border-red {
-  --mu-line-highlight-border: #ff000048;
-}
-
-.line-highlight-border-purple {
-  --mu-line-highlight-border: #bf00ff48;
-}
-
-.line-highlight-border-pink {
-  --mu-line-highlight-border: #ff00a348;
-}
-
-.line-highlight-border-gray {
-  --mu-line-highlight-border: #a3a3a348;
-}
-
-.line-highlight-background-default {
-  --mu-line-highlight-background: transparent;
-}
-
-.line-highlight-background-blue {
-  --mu-line-highlight-background: #007fff20;
-}
-
-.line-highlight-background-green {
-  --mu-line-highlight-background: #00cf0020;
-}
-
-.line-highlight-background-orange {
-  --mu-line-highlight-background: #ff7f0020;
-}
-
-.line-highlight-background-yellow {
-  --mu-line-highlight-background: #ffd70020;
-}
-
-.line-highlight-background-red {
-  --mu-line-highlight-background: #ff000020;
-}
-
-.line-highlight-background-purple {
-  --mu-line-highlight-background: #bf00ff20;
-}
-
-.line-highlight-background-pink {
-  --mu-line-highlight-background: #ff00a320;
-}
-
-.line-highlight-background-gray {
-  --mu-line-highlight-background: #a3a3a320;
-}
-
 /* UI */
-body:not(.is-mobile).mu-distraction-free-mode {
-  --ribbon-width: 1px;
-  --ui-distraction-free-toggle-button: none;
-  --ribbon-background: var(--mu-background-color-1);
-  --mu-header-title-drag: drag;
-}
-
 body:not(.is-mobile) .view-header-title-container.mod-at-start,
 body:not(.is-mobile) .status-bar-item.plugin-word-count {
   -webkit-app-region: var(--mu-header-title-drag);
@@ -4028,57 +3897,8 @@ body:not(.is-mobile) .workspace-ribbon.mod-left {
   border-right: 0;
 }
 
-/* Distraction-free mode */
-
-body:not(.is-mobile).mu-distraction-free-mode .workspace-tab-header-container,
-body:not(.is-mobile).mu-distraction-free-mode .titlebar-button-container.mod-right {
-  display: none;
-}
-
-body:not(.is-mobile).mu-distraction-free-mode .sidebar-toggle-button.mod-left {
-  display: var(--ui-distraction-free-toggle-button);
-}
-
-body:not(.is-mobile).mu-distraction-free-mode .workspace-ribbon.side-dock-ribbon.mod-left {
-  padding: 0;
-  background: var(--ribbon-background);
-}
-
-body:not(.is-mobile).mu-distraction-free-mode .workspace-ribbon.side-dock-ribbon.mod-left:hover {
-  --ribbon-width: 44px;
-  --ui-distraction-free-toggle-button: flex;
-  padding: var(--ribbon-padding);
-  --ribbon-background: var(--mu-titlebar-background);
-}
-
-/* Distraction-free mode 
-Total concentration mode
--> mobile devices */
-
-body.is-mobile.mu-distraction-free-mode .workspace-tab-header-container,
-body.is-mobile.mu-distraction-free-mode .mobile-navbar {
-  display: none;
-}
-
-body.is-mobile.mu-total-concentration-mode .view-header,
-body.is-mobile.mu-total-concentration-mode .workspace-tab-header-container,
-body.is-mobile.mu-total-concentration-mode .mobile-navbar {
-  display: none;
-}
-
 .mod-macos.is-hidden-frameless:not(.is-popout-window) .sidebar-toggle-button.mod-right {
   background-color: transparent;
-}
-
-/* Total concentration mode */
-
-body:not(.is-mobile).mu-total-concentration-mode .workspace-ribbon.side-dock-ribbon.mod-left,
-body:not(.is-mobile).mu-total-concentration-mode .sidebar-toggle-button.mod-left,
-body:not(.is-mobile).mu-total-concentration-mode .status-bar,
-body:not(.is-mobile).mu-total-concentration-mode .view-header,
-body:not(.is-mobile).mu-total-concentration-mode .workspace-tab-header-container,
-body:not(.is-mobile).mu-total-concentration-mode .titlebar-button-container.mod-right {
-  display: none;
 }
 
 /* vault title and view-header-nav-buttons */
@@ -4193,89 +4013,6 @@ body:not(.is-mobile) .inline-title:hover {
 }
 
 /* Reading mode */
-
-.markdown-reading-view>div>div>div:not(.mod-header, .obsidian-banner-wrapper):hover {
-  box-shadow: var(--mu-reading-indicator-width) 0 0 0 var(--mu-reading-indicator-color);
-}
-
-body:not(.mu-reading-glow-status-off) .markdown-reading-view>div>div>div:not(.mod-header, .obsidian-banner-wrapper):active {
-  box-shadow: 0 0 0 var(--mu-reading-glow-border-size) var(--mu-reading-glow-color), 0 0 1.2rem .2rem var(--mu-reading-glow-color);
-  border-radius: var(--mu-reading-glow-radius);
-  transition: box-shadow .5s ease-in-out;
-}
-
-body:not(.mu-hide-heading-labels) .markdown-reading-view h1,
-body:not(.mu-hide-heading-labels) .markdown-reading-view h2,
-body:not(.mu-hide-heading-labels) .markdown-reading-view h3,
-body:not(.mu-hide-heading-labels) .markdown-reading-view h4,
-body:not(.mu-hide-heading-labels) .markdown-reading-view h5,
-body:not(.mu-hide-heading-labels) .markdown-reading-view h6 {
-  position: relative;
-}
-
-body:not(.mu-hide-heading-labels) .markdown-reading-view h1:active,
-body:not(.mu-hide-heading-labels) .markdown-reading-view h2:active,
-body:not(.mu-hide-heading-labels) .markdown-reading-view h3:active,
-body:not(.mu-hide-heading-labels) .markdown-reading-view h4:active,
-body:not(.mu-hide-heading-labels) .markdown-reading-view h5:active,
-body:not(.mu-hide-heading-labels) .markdown-reading-view h6:active {
-  --mu-label-visible: hidden;
-}
-
-body:not(.mu-hide-heading-labels) .markdown-reading-view h1::before,
-body:not(.mu-hide-heading-labels) .markdown-reading-view h2::before,
-body:not(.mu-hide-heading-labels) .markdown-reading-view h3::before,
-body:not(.mu-hide-heading-labels) .markdown-reading-view h4::before,
-body:not(.mu-hide-heading-labels) .markdown-reading-view h5::before,
-body:not(.mu-hide-heading-labels) .markdown-reading-view h6::before {
-  font-size: .8rem;
-  font-family: var(--mu-font-ui);
-  position: absolute;
-  top: -1rem;
-  left: 0;
-  visibility: hidden;
-  letter-spacing: 1px;
-  -webkit-text-stroke: 0;
-}
-
-body:not(.mu-hide-heading-labels) .markdown-reading-view h1::before {
-  content: "H1 ";
-  color: var(--mu-label-h1);
-}
-
-body:not(.mu-hide-heading-labels) .markdown-reading-view h2::before {
-  content: "H2 ";
-  color: var(--mu-label-h2);
-}
-
-body:not(.mu-hide-heading-labels) .markdown-reading-view h3::before {
-  content: "H3 ";
-  color: var(--mu-label-h3);
-}
-
-body:not(.mu-hide-heading-labels) .markdown-reading-view h4::before {
-  content: "H4 ";
-  color: var(--mu-label-h4);
-}
-
-body:not(.mu-hide-heading-labels) .markdown-reading-view h5::before {
-  content: "H5 ";
-  color: var(--mu-label-h5);
-}
-
-body:not(.mu-hide-heading-labels) .markdown-reading-view h6::before {
-  content: "H6 ";
-  color: var(--mu-label-h6);
-}
-
-body:not(.mu-hide-heading-labels) .markdown-reading-view h1:hover::before,
-body:not(.mu-hide-heading-labels) .markdown-reading-view h2:hover::before,
-body:not(.mu-hide-heading-labels) .markdown-reading-view h3:hover::before,
-body:not(.mu-hide-heading-labels) .markdown-reading-view h4:hover::before,
-body:not(.mu-hide-heading-labels) .markdown-reading-view h5:hover::before,
-body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
-  visibility: var(--mu-label-visible);
-}
 
 /* Settings */
 .vertical-tab-header-group {
@@ -4749,70 +4486,6 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --prompt-border-color: #282828;
 }
 
-/* Chroma Amulet */
-.theme-light.magicuser-chroma-amulet-theme {
-  --amulet-icon-color: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 33%);
-  --amulet-title-color: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 42%);
-  --mu-background-color-1: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 90%);
-  --mu-background-color-2: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 82%);
-  --mu-titlebar-background: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 80%);
-  --mu-caret-color: #0072d3;
-  --mu-divider-color: #00000000;
-  --mu-input-bg-color: #fff;
-  --mu-text-title: var(--amulet-title-color);
-  --mu-vault-title: var(--amulet-title-color);
-  --code-background: #f1f1f1;
-  --code-punctuation: var(--amulet-title-color);
-  --mu-folder-text-color: #0048a3;
-  --mu-h1: #0048a3;
-  --mu-h2: #0048a3;
-  --mu-h3: #0048a3;
-  --mu-h4: #0048a3;
-  --mu-h5: #0048a3;
-  --mu-h6: #0048a3;
-  --mu-suggestion-color: #0072d3;
-  --mu-text-selection: #0088ff53;
-  --mu-dark-sidebar-color: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 8%);
-  --mu-icon: var(--amulet-icon-color);
-  --mu-icon-hover: var(--amulet-icon-color);
-  --mu-icon-active: #0072d3;
-  --mu-icon-focused: #0072d3;
-  --search-icon-color: var(--amulet-icon-color);
-  --mu-icon-statusbar-menu: var(--amulet-icon-color);
-  --mu-table-th-background: var(--amulet-icon-color);
-}
-
-.theme-dark.magicuser-chroma-amulet-theme {
-  --amulet-icon-color: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 33%);
-  --amulet-title-color: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 42%);
-  --mu-background-color-1: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 10%);
-  --mu-background-color-2: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 8%);
-  --mu-titlebar-background: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 6%);
-  --mu-caret-color: #00cfff;
-  --mu-divider-color: #00000000;
-  --mu-input-bg-color: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 4%);
-  --mu-text-title: var(--amulet-title-color);
-  --mu-vault-title: var(--amulet-title-color);
-  --code-background: #000;
-  --code-punctuation: var(--amulet-title-color);
-  --mu-folder-text-color: #72b1ff;
-  --mu-h1: #00a3ff;
-  --mu-h2: #00a3ff;
-  --mu-h3: #00a3ff;
-  --mu-h4: #00a3ff;
-  --mu-h5: #00a3ff;
-  --mu-h6: #00a3ff;
-  --mu-suggestion-color: #00cfff;
-  --mu-text-selection: #0088ff53;
-  --mu-icon: var(--amulet-icon-color);
-  --mu-icon-hover: var(--amulet-icon-color);
-  --mu-icon-active: #0072d3;
-  --mu-icon-focused: #0072d3;
-  --search-icon-color: var(--amulet-icon-color);
-  --mu-icon-statusbar-menu: var(--amulet-icon-color);
-  --mu-table-th-background: var(--amulet-icon-color);
-}
-
 /* Accent */
 .theme-light.magicuser-accent-theme {
   --mu-accent-color: hsla(var(--color-accent-hsl), 1);
@@ -4876,12 +4549,6 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-indent-color-level-4: var(--mu-accent-details);
   --mu-indent-color-level-5: var(--mu-accent-details);
   --mu-indent-color-level-6: var(--mu-accent-details);
-  --mu-label-h1: #979797;
-  --mu-label-h2: #979797;
-  --mu-label-h3: #979797;
-  --mu-label-h4: #979797;
-  --mu-label-h5: #979797;
-  --mu-label-h6: #979797;
   --divider-color-hover: var(--mu-accent-color);
 }
 
@@ -4946,12 +4613,6 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-indent-color-level-4: var(--mu-accent-details);
   --mu-indent-color-level-5: var(--mu-accent-details);
   --mu-indent-color-level-6: var(--mu-accent-details);
-  --mu-label-h1: #484848;
-  --mu-label-h2: #484848;
-  --mu-label-h3: #484848;
-  --mu-label-h4: #484848;
-  --mu-label-h5: #484848;
-  --mu-label-h6: #484848;
   --divider-color-hover: var(--mu-accent-color);
 }
 
@@ -4959,7 +4620,6 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
 /* BG Series - Light Theme */
 .magicuser-bg-north-pole-theme,
 .magicuser-bg-sunset-theme,
-.magicuser-bg-old-school-theme,
 .magicuser-bg-classic-theme,
 .magicuser-bg-night-theme,
 .magicuser-bg-dreams-theme,
@@ -4974,7 +4634,6 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
 
 .theme-light.magicuser-bg-north-pole-theme,
 .theme-light.magicuser-bg-sunset-theme,
-.theme-light.magicuser-bg-old-school-theme,
 .theme-light.magicuser-bg-classic-theme,
 .theme-light.magicuser-bg-night-theme,
 .theme-light.magicuser-bg-dreams-theme,
@@ -5019,36 +4678,6 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --code-background: #181818;
   --tab-text-color-focused-active-current: #00a3ff;
   --mu-icon-focused: #bf48ff;
-}
-
-/* Old School */
-.theme-dark.magicuser-bg-old-school-theme {
-  --mu-background-color-1: #000;
-  --mu-background-color-2: #000;
-  --mu-divider-color: #00000000;
-  --mu-input-bg-color: #1f1f1f;
-  --mu-text-title: #00a378;
-  --mu-titlebar-background: #1f1f1f;
-  --mu-vault-title: #00a378;
-  --mu-folder-text-color: #00cf95;
-  --code-background: #000;
-  --code-punctuation: hsl(164, 100%, 32%);
-  --tab-text-color-focused-active-current: #00f0b0;
-  --mu-suggestion-color: #00f0b0;
-  --mu-caret-color: #00f0b0;
-  --mu-h1: #00cf95;
-  --mu-h2: #00cf95;
-  --mu-h3: #00cf95;
-  --mu-h4: #00cf95;
-  --mu-h5: #00cf95;
-  --mu-h6: #00cf95;
-  --checkbox-color: #00e1a3;
-  --checkbox-color-hover: #32ffa6;
-  --checkbox-border-color: #00e1a3;
-  --checkbox-border-color-hover: #3dffac;
-  --mu-icon-focused: #00f0b0;
-  --hr-color: #00f0b0;
-  --list-marker-color: #00f0b0;
 }
 
 /* Night */
@@ -5126,14 +4755,8 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   background: linear-gradient(0deg, rgba(0, 0, 0, var(--mu-bg-image-overlay)), rgba(0, 0, 0, var(--mu-bg-image-overlay))), linear-gradient(0deg, rgba(214, 147, 112, 0.72) 0%, rgba(85, 88, 95, 1) 28%, rgba(9, 17, 37, 1) 100%) 50% 100%;
 }
 
-.theme-dark.magicuser-bg-old-school-theme .workspace-split:not(.mod-right-split, .mod-left-split) .view-content,
-.theme-dark.magicuser-bg-old-school-theme .view-content>.canvas-wrapper {
-  background: linear-gradient(0deg, rgba(0, 0, 0, var(--mu-bg-image-overlay)), rgba(0, 0, 0, var(--mu-bg-image-overlay))), linear-gradient(rgba(0, 0, 0, 0.71) 0%, #002417 100%) 100% 100%;
-}
-
 .theme-dark.magicuser-bg-north-pole-theme .document-search-container,
 .theme-dark.magicuser-bg-sunset-theme .document-search-container,
-.theme-dark.magicuser-bg-old-school-theme .document-search-container,
 .theme-dark.magicuser-bg-classic-theme .document-search-container,
 .theme-dark.magicuser-bg-night-theme .document-search-container,
 .theme-dark.magicuser-bg-dreams-theme .document-search-container,
@@ -5202,15 +4825,8 @@ body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-accent-theme
   --nav-collapse-icon-color: #484848;
 }
 
-body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-chroma-amulet-theme {
-  --mu-folder-text-color: #72b1ff;
-  --mu-bg-search-results: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 10%);
-  --mu-titlebar-background: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 6%);
-}
-
 body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-bg-north-pole-theme,
 body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-bg-sunset-theme,
-body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-bg-old-school-theme,
 body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-bg-classic-theme,
 body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-bg-night-theme,
 body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-bg-dreams-theme,
@@ -6269,41 +5885,6 @@ div.view-content.node-insert-event .tree-item-children .tree-item-children .tree
   border-left: 1px solid var(--mu-indent-color-level-5);
 }
 
-/* Reading Glow */
-.reading-glow-blue {
-  --mu-reading-glow-color: #00a3ff;
-}
-
-.reading-glow-green {
-  --mu-reading-glow-color: #00ff88;
-}
-
-.reading-glow-orange {
-  --mu-reading-glow-color: #ff7f00;
-}
-
-.reading-glow-red {
-  --mu-reading-glow-color: #f10000;
-}
-
-.reading-glow-yellow {
-  --mu-reading-glow-color: #ffd700;
-}
-
-.reading-glow-pink {
-  --mu-reading-glow-color: #ff88cf;
-}
-
-.reading-glow-purple {
-  --mu-reading-glow-color: #bf48ff;
-}
-
-/* Reading glow status */
-
-.mu-reading-glow-status-off {
-  --mu-reading-glow-color: transparent;
-}
-
 /* MagicUser Compact Prompt */
 body:not(.is-mobile).mu-compact-prompt .prompt {
   position: fixed;
@@ -6850,112 +6431,6 @@ body.mu-hide-tabs-icons .workspace-split.mod-vertical.mod-root .workspace-tab-he
   border: 0;
 }
 
-/* MagicUser Laser */
-body.mu-laser-active.mu-laser-type-line div.workspace-split:not(.mod-right-split, .mod-left-split) .view-content::after {
-  content: '';
-  top: var(--mu-laser-top);
-  left: 10px;
-  right: 20px;
-  position: absolute;
-  z-index: 2000;
-  width: auto;
-  height: 2px;
-  box-shadow: 0 0 8px 2px var(--mu-laser-color-glow), 0 0 calc(var(--mu-laser-intensity) * 22px) 2px var(--mu-laser-color-glow);
-  background-color: var(--mu-laser-color-bg);
-  border-radius: 24px;
-  transform: scaleY(var(--mu-laser-intensity));
-  opacity: .8;
-  pointer-events: none;
-}
-
-body.mu-laser-active.mu-laser-type-area div.workspace-split:not(.mod-right-split, .mod-left-split) .view-content::after {
-  content: '';
-  top: var(--mu-laser-top);
-  left: 10px;
-  right: 20px;
-  position: absolute;
-  z-index: 2000;
-  width: auto;
-  height: var(--mu-laser-area);
-  box-shadow: inset 0 0 10px 1px var(--mu-laser-color-glow), 0 0 4px 1px var(--mu-laser-color-glow), 0 0 calc(var(--mu-laser-intensity) * 12px) 1px var(--mu-laser-color-glow);
-  border: calc(var(--mu-laser-intensity) * 1px) solid var(--mu-laser-color-bg);
-  background-color: transparent;
-  border-radius: 0;
-  transform: none;
-  opacity: .8;
-  pointer-events: none;
-}
-
-.theme-dark.mu-laser-green {
-  --mu-laser-color-bg: #80ffaa;
-  --mu-laser-color-glow: #00ff55;
-}
-
-.theme-light.mu-laser-green {
-  --mu-laser-color-bg: #00e84d;
-  --mu-laser-color-glow: #00ff5580;
-}
-
-.theme-dark.mu-laser-blue {
-  --mu-laser-color-bg: #00f1ff;
-  --mu-laser-color-glow: #00a3ff;
-}
-
-.theme-light.mu-laser-blue {
-  --mu-laser-color-bg: #00a3ff;
-  --mu-laser-color-glow: #00a3ff88;
-}
-
-.theme-dark.mu-laser-red {
-  --mu-laser-color-bg: #ff7f7f;
-  --mu-laser-color-glow: #ff0000;
-}
-
-.theme-light.mu-laser-red {
-  --mu-laser-color-bg: #ff0000;
-  --mu-laser-color-glow: #ff000088;
-}
-
-.theme-dark.mu-laser-orange {
-  --mu-laser-color-bg: #ffcf00;
-  --mu-laser-color-glow: #ff7f00;
-}
-
-.theme-light.mu-laser-orange {
-  --mu-laser-color-bg: #ff7f00;
-  --mu-laser-color-glow: #ff7f0088;
-}
-
-.theme-dark.mu-laser-yellow {
-  --mu-laser-color-bg: #ffff00;
-  --mu-laser-color-glow: #e1e100;
-}
-
-.theme-light.mu-laser-yellow {
-  --mu-laser-color-bg: #ffd700;
-  --mu-laser-color-glow: #ffd70088;
-}
-
-.theme-dark.mu-laser-purple {
-  --mu-laser-color-bg: #d88fff;
-  --mu-laser-color-glow: #bf48ff;
-}
-
-.theme-light.mu-laser-purple {
-  --mu-laser-color-bg: #bf48ff;
-  --mu-laser-color-glow: #a300ff88;
-}
-
-.theme-dark.mu-laser-pink {
-  --mu-laser-color-bg: #ff8ce1;
-  --mu-laser-color-glow: #ff48cf;
-}
-
-.theme-light.mu-laser-pink {
-  --mu-laser-color-bg: #ff00cf;
-  --mu-laser-color-glow: #ff48cf88;
-}
-
 /* Sidebar adjustment */
 body:not(.is-mobile) .modal.mod-settings.mod-sidebar-layout {
   resize: both;
@@ -7072,29 +6547,6 @@ input.pdf-page-input {
   background-color: var(--mu-background-color-2);
 }
 
-/* Reading hover underline */
-body.mu-hover-underline .markdown-reading-view .markdown-preview-sizer *:not(.mod-header, .inline-title):hover,
-body.mu-hover-underline .markdown-source-view.mod-cm6.is-readable-line-width .cm-content *:hover {
-  text-decoration: underline;
-  text-decoration-color: var(--mu-hover-underline-color) !important;
-  text-decoration-skip-ink: none;
-  text-decoration-style: var(--mu-hover-underline-style) !important;
-  text-decoration-thickness: var(--mu-hover-underline-thickness) !important;
-  text-underline-offset: var(--mu-hover-underline-offset) !important;
-}
-
-.mu-hover-underline-style-dashed {
-  --mu-hover-underline-style: dashed;
-}
-
-.mu-hover-underline-style-dotted {
-  --mu-hover-underline-style: dotted;
-}
-
-.mu-hover-underline-style-double {
-  --mu-hover-underline-style: double;
-}
-
 /* 
 cssclasses:
 readable line width enabled 
@@ -7177,23 +6629,8 @@ body:not(.is-mobile).mu-cards-interface .workspace-tab-container {
   border: 1px solid var(--mu-cards-border);
 }
 
-body:not(.is-mobile, .mu-distraction-free-mode, .mu-total-concentration-mode).mu-cards-interface .workspace-tab-container {
+body:not(.is-mobile).mu-cards-interface .workspace-tab-container {
   margin-bottom: 16px;
-}
-
-body:not(.is-mobile).mu-cards-interface.mu-distraction-free-mode .workspace-tab-container {
-  border-radius: 8px;
-  margin-left: 8px;
-  margin-right: 16px;
-  margin-top: 8px;
-  margin-bottom: 8px;
-  border: 1px solid var(--mu-cards-border);
-}
-
-body:not(.is-mobile).mu-cards-interface.mu-total-concentration-mode .workspace-tab-container {
-  border-radius: 8px;
-  margin: 8px;
-  border: 1px solid var(--mu-cards-border);
 }
 
 body:not(.is-mobile).mu-cards-interface .titlebar-button-container,
@@ -7281,25 +6718,6 @@ body:not(.is-mobile).mu-cards-interface .workspace-tabs .workspace-leaf .view-co
 .mod-linux .titlebar-button.mod-close:hover,
 .mod-windows .titlebar-button.mod-close:hover {
   color: #f1f1f1 !important;
-}
-
-body.mu-active-line-zoom .view-content .cm-line.cm-active {
-  border: 1px dotted var(--text-faint);
-  font-size: 1.5em;
-  padding: 0;
-  margin-inline-start: 0;
-}
-
-body.mu-active-line-zoom .view-content .cm-line.cm-active .cm-header {
-  font-size: 1.5em !important;
-}
-
-body.mu-active-line-zoom .view-content .cm-line.cm-active input[type=checkbox] {
-  margin-inline-start: 8px;
-}
-
-body.mu-active-line-zoom .markdown-reading-view>div>div>div:not(.mod-header, .obsidian-banner-wrapper):active {
-  font-size: 1.5em !important;
 }
 
 /* Suggestion note */
@@ -8048,10 +7466,6 @@ body.mu-global-font-mode {
   transform: scale(var(--mu-collapse-icon-size));
 }
 
-.mu-hide-reading-indicator {
-  --mu-reading-indicator-width: 0;
-}
-
 body.mu-hide-indent-guides {
   --indentation-guide-width: 0;
   --indentation-guide-color: transparent;
@@ -8190,9 +7604,6 @@ settings:
                 label: MagicUser Stealth
                 value: magicuser-stealth-theme
             - 
-                label: MagicUser Chroma Amulet
-                value: magicuser-chroma-amulet-theme
-            - 
                 label: MagicUser Accent
                 value: magicuser-accent-theme
             - 
@@ -8216,27 +7627,6 @@ settings:
             - 
                 label: MagicUser BG North Pole
                 value: magicuser-bg-north-pole-theme
-            - 
-                label: MagicUser BG Old School
-                value: magicuser-bg-old-school-theme
-    - 
-        id: mu-amulet-hue
-        title: Chroma Amulet - color
-        description: MagicUser Chroma Amulet preset theme - select color.
-        type: variable-number-slider
-        default: 224
-        min: 0
-        max: 360
-        step: 1
-    - 
-        id: mu-amulet-sat-value
-        title: Chroma Amulet - saturation
-        description: MagicUser Chroma Amulet preset theme - select saturation.
-        type: variable-number-slider
-        default: 50
-        min: 0
-        max: 100
-        step: 1
     -
         id: mu-bg-image-overlay
         title: BG themes (dark mode) - darken background
@@ -10125,27 +9515,6 @@ settings:
         level: 3
         collapsed: true
     -
-        id: mu-warm-screen-mode
-        title: Warm screen mode
-        description: Adjust the intensity of the warm screen mode (0 = off).
-        type: variable-number-slider
-        default: 0.0
-        min: 0.0
-        max: 1.0
-        step: 0.01
-    -
-        id: mu-distraction-free-mode
-        title: Distraction-free mode 
-        description: Activate distraction-free mode.
-        type: class-toggle
-        addCommand: true
-    -
-        id: mu-total-concentration-mode
-        title: Total concentration mode 
-        description: Activate total concentration mode.
-        type: class-toggle
-        addCommand: true
-    -
         id: mu-cards-interface
         title: Cards UI
         description: Activate cards user interface.
@@ -10170,388 +9539,6 @@ settings:
         opacity: true
         default-light: '#0072d3'
         default-dark: '#0072d3'
-    - 
-        id: magicuser-theme-active-line-zoom
-        title: Active line zoom
-        type: heading
-        level: 3
-        collapsed: true
-    -
-        id: mu-active-line-zoom
-        title: MagicUser active line zoom
-        description: Turn on active line zoom (live preview, source and reading modes).
-        type: class-toggle
-        addCommand: true
-    -
-        id: magicuser-theme-hover-underline
-        title: Hover underline
-        type: heading
-        level: 3
-        collapsed: true
-    -
-        id: mu-hover-underline
-        title: Hover underline
-        description: Turn on hover underline (live preview, source and reading modes).
-        type: class-toggle
-        addCommand: true
-    -
-        id: mu-hover-underline-style
-        title: Hover underline style
-        type: class-select
-        description: Select hover underline style.
-        allowEmpty: false
-        default: none
-        options:
-            - 
-                label: Default
-                value: none
-            - 
-                label: Dashed
-                value: mu-hover-underline-style-dashed
-            - 
-                label: Dotted
-                value: mu-hover-underline-style-dotted
-            - 
-                label: Double
-                value: mu-hover-underline-style-double
-    - 
-        id: mu-hover-underline-color
-        title: Hover underline color
-        type: variable-themed-color
-        description: Select hover underline color.
-        format: hex
-        opacity: true
-        default-light: '#ff0000cf'
-        default-dark: '#ff0000cf'
-    - 
-        id: mu-hover-underline-thickness-value
-        title: Hover underline thickness
-        description: Select hover underline thickness.
-        type: variable-number-slider
-        default: 2
-        min: 1
-        max: 5
-        step: 1
-    -
-        id: mu-hover-underline-offset-value
-        title: Gap between text and hover underline
-        description: Select the gap between text and hover underline.
-        type: variable-number-slider
-        default: 2
-        min: 0
-        max: 5
-        step: 1
-    -
-        id: magicuser-theme-line-highlight
-        title: Line highlight
-        type: heading
-        level: 3
-        collapsed: true
-    -
-        id: mu-line-highlight-border
-        title: Line highlight border color
-        type: class-select
-        description: Border color of the active line.
-        allowEmpty: false
-        default: line-highlight-border-default
-        options:
-            - 
-                label: No border
-                value: line-highlight-border-default
-            - 
-                label: Blue border
-                value: line-highlight-border-blue
-            - 
-                label: Green border
-                value: line-highlight-border-green
-            - 
-                label: Orange border
-                value: line-highlight-border-orange
-            - 
-                label: Yellow border
-                value: line-highlight-border-yellow
-            - 
-                label: Red border
-                value: line-highlight-border-red
-            - 
-                label: Purple border
-                value: line-highlight-border-purple
-            - 
-                label: Pink border
-                value: line-highlight-border-pink
-            - 
-                label: Gray border
-                value: line-highlight-border-gray
-    -
-        id: mu-line-highlight-background
-        title: Line highlight background color
-        type: class-select
-        description: Background color of the active line.
-        allowEmpty: false
-        default: line-highlight-background-default
-        options:
-            - 
-                label: No background
-                value: line-highlight-background-default
-            - 
-                label: Blue background
-                value: line-highlight-background-blue
-            - 
-                label: Green background
-                value: line-highlight-background-green
-            - 
-                label: Orange background
-                value: line-highlight-background-orange
-            - 
-                label: Yellow background
-                value: line-highlight-background-yellow
-            - 
-                label: Red background
-                value: line-highlight-background-red
-            - 
-                label: Purple background
-                value: line-highlight-background-purple
-            - 
-                label: Pink background
-                value: line-highlight-background-pink
-            - 
-                label: Gray background
-                value: line-highlight-background-gray
-    -
-        id: magicuser-theme-laser
-        title: Laser
-        type: heading
-        level: 3
-        collapsed: true
-    -
-        id: mu-laser-active
-        title: MagicUser laser
-        description: Turn on MagicUser laser.
-        type: class-toggle
-        addCommand: true
-    -
-        id: mu-laser-type
-        title: Laser focus type
-        type: class-select
-        description: Select laser focus type.
-        allowEmpty: false
-        default: mu-laser-type-line
-        options:
-            - 
-                label: Line
-                value: mu-laser-type-line
-            - 
-                label: Area
-                value: mu-laser-type-area
-    - 
-        id: mu-laser-intensity
-        title: Laser intensity
-        description: Adjust the laser intensity.
-        type: variable-number-slider
-        default: 1.5
-        min: 0.5
-        max: 3.0
-        step: 0.1
-    -
-        id: mu-laser-color
-        title: Laser color
-        type: class-select
-        description: Select laser color.
-        allowEmpty: false
-        default: mu-laser-blue
-        options:
-            - 
-                label: Blue laser
-                value: mu-laser-blue
-            - 
-                label: Green laser
-                value: mu-laser-green
-            - 
-                label: Orange laser
-                value: mu-laser-orange
-            - 
-                label: Yellow laser
-                value: mu-laser-yellow
-            - 
-                label: Red laser
-                value: mu-laser-red
-            - 
-                label: Purple laser
-                value: mu-laser-purple
-            - 
-                label: Pink laser
-                value: mu-laser-pink
-    - 
-        id: mu-laser-area-value
-        title: Laser area size
-        description: Adjust the laser area size.
-        type: variable-number-slider
-        default: 82
-        min: 1
-        max: 300
-        step: 1
-    - 
-        id: mu-laser-top-value
-        title: Laser position
-        description: Adjust the laser vertical position.
-        type: variable-number-slider
-        default: 50
-        min: 10
-        max: 90
-        step: 1
-    -
-        id: magicuser-theme-reading-indicator
-        title: Reading mode
-        type: heading
-        level: 3
-        collapsed: true
-    -
-        id: magicuser-theme-reading-glow
-        title: Reading glow
-        type: heading
-        level: 4
-        collapsed: true
-    -
-        id: mu-reading-glow
-        title: Reading glow color
-        type: class-select
-        description: Reading glow color.
-        allowEmpty: false
-        default: reading-glow-blue
-        options:
-            - 
-                label: Blue glow
-                value: reading-glow-blue
-            - 
-                label: Green glow
-                value: reading-glow-green
-            - 
-                label: Orange glow
-                value: reading-glow-orange
-            - 
-                label: Yellow glow
-                value: reading-glow-yellow
-            - 
-                label: Red glow
-                value: reading-glow-red
-            - 
-                label: Pink glow
-                value: reading-glow-pink
-            - 
-                label: Purple glow
-                value: reading-glow-purple
-    -
-        id: mu-reading-glow-border-size-value
-        title: Reading glow border size
-        description: Reading glow border size (0 = glow only).
-        type: variable-number-slider
-        default: 3
-        min: 0
-        max: 8
-        step: 1
-    -
-        id: mu-reading-glow-radius-value
-        title: Reading glow corners
-        description: Reading glow corners (0 = square corners).
-        type: variable-number-slider
-        default: 1
-        min: 0
-        max: 2
-        step: 0.5
-    -
-        id: mu-reading-glow-status-off
-        title: Turn off reading glow
-        description: Turn off the reading glow effect.
-        type: class-toggle
-        addCommand: true
-    -
-        id: magicuser-theme-reading-indicator
-        title: Reading indicator and labels
-        type: heading
-        level: 4
-        collapsed: true
-    - 
-        id: mu-reading-indicator-color
-        title: Reading indicator color
-        type: variable-themed-color
-        description: Color of the reading indicator.
-        format: hex
-        opacity: true
-        default-light: '#007fffa3'
-        default-dark: '#007fffa3'
-    - 
-        id: mu-reading-indicator-width-value-rem
-        title: Reading indicator width
-        description: Select reading indicator width (0 = no indicator).
-        type: variable-number-slider
-        default: 0.3
-        min: 0
-        max: 1
-        step: 0.05
-    -
-        id: mu-hide-reading-indicator
-        title: Hide reading indicator 
-        description: Hide reading indicator.
-        type: class-toggle
-    -
-        id: mu-hide-heading-labels
-        title: Hide headings labels 
-        description: Hide headings labels.
-        type: class-toggle
-    -
-        id: mu-label-h1
-        title: H1 label color
-        type: variable-themed-color
-        description: Reading mode - H1 label color.
-        format: hex
-        opacity: false
-        default-light: '#bf72d8'
-        default-dark: '#a35fbf'
-    -
-        id: mu-label-h2
-        title: H2 label color
-        type: variable-themed-color
-        description: Reading mode - H2 label color.
-        format: hex
-        opacity: false
-        default-light: '#bf72d8'
-        default-dark: '#a35fbf'
-    -
-        id: mu-label-h3
-        title: H3 label color
-        type: variable-themed-color
-        description: Reading mode - H3 label color.
-        format: hex
-        opacity: false
-        default-light: '#bf72d8'
-        default-dark: '#a35fbf'
-    -
-        id: mu-label-h4
-        title: H4 label color
-        type: variable-themed-color
-        description: Reading mode - H4 label color.
-        format: hex
-        opacity: false
-        default-light: '#bf72d8'
-        default-dark: '#a35fbf'
-    -
-        id: mu-label-h5
-        title: H5 label color
-        type: variable-themed-color
-        description: Reading mode - H5 label color.
-        format: hex
-        opacity: false
-        default-light: '#bf72d8'
-        default-dark: '#a35fbf'
-    -
-        id: mu-label-h6
-        title: H6 label color
-        type: variable-themed-color
-        description: Reading mode - H6 label color.
-        format: hex
-        opacity: false
-        default-light: '#bf72d8'
-        default-dark: '#a35fbf'
     -
         id: magicuser-theme-hide-ui-elements
         title: Hide UI elements
@@ -10598,18 +9585,5 @@ settings:
         title: Auto hide status bar
         description: Auto hide status bar.
         type: class-toggle
-    - 
-        id: magicuser-theme-about
-        title: MagicUser theme
-        type: heading
-        description: Made with ♥ by Bernardo Pires.
-        level: 2
-        collapsed: true
-    - 
-        id: my-info-text
-        title: MagicUser theme for Obsidian
-        description: Made with ♥ by Bernardo Pires (@drbap). I hope you enjoy. Thanks for using it.
-        type: info-text
-        markdown: false
 
 */
