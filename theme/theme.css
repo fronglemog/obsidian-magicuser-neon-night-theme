@@ -686,8 +686,6 @@ body {
   --mu-callout-link: 48, 142, 255;
   --mu-quote-icon: '<svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --><path d="m185 89.2-124 177a84.4 91.3 0 0 0-15.6 22.2l-5.09 7.26 2.05-0.186a84.4 91.3 0 0 0-7.11 35.9 84.4 91.3 0 0 0 84.4 91.3 84.4 91.3 0 0 0 84.4-91.3 84.4 91.3 0 0 0-36.5-74.8l103-167zm206 0-124 177a84.4 91.3 0 0 0-15.6 22.2l-5.09 7.25 2.05-0.186a84.4 91.3 0 0 0-7.11 35.9 84.4 91.3 0 0 0 84.4 91.3 84.4 91.3 0 0 0 84.4-91.3 84.4 91.3 0 0 0-36.5-74.8l103-167z" fill="currentColor" stroke="currentColor"/></svg>';
   --mu-box-callout-icon: '<svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --><path d="m135 97.8h242c20.6 0 37.3 17.2 37.3 38.7v239c0 21.4-16.6 38.7-37.3 38.7h-242c-20.6 0-37.3-17.2-37.3-38.7v-239c0-21.4 16.6-38.7 37.3-38.7z" fill="currentColor" fill-rule="evenodd"/></svg>';
-  --mu-line-highlight-border: transparent;
-  --mu-line-highlight-background: transparent;
 
   --mu-folder-icon-opened-default: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></svg>');
   --mu-folder-icon-closed-default: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></svg>');
@@ -963,12 +961,6 @@ span.is-flashing {
   background-color: var(--mu-background-color-2);
 }
 
-.cm-active.HyperMD-codeblock.HyperMD-codeblock-bg.cm-line,
-.cm-active:not(.cm-gutterElement) {
-  box-shadow: inset 0 0 2px 2px var(--mu-line-highlight-border);
-  background-color: var(--mu-line-highlight-background);
-}
-
 .cm-gutterElement.cm-active {
   color: var(--mu-caret-color);
 }
@@ -1192,12 +1184,6 @@ body:not(.is-mobile) button:not(.mod-cta, .clickable-icon.view-action, .clickabl
   --code-punctuation: #a300a3;
   --mu-code-attribute: #ffa3a3;
   --mu-input-bg-color: #001836;
-  --mu-label-h1: #a35fbf;
-  --mu-label-h2: #a35fbf;
-  --mu-label-h3: #a35fbf;
-  --mu-label-h4: #a35fbf;
-  --mu-label-h5: #a35fbf;
-  --mu-label-h6: #a35fbf;
   --mu-text-selection: #bf48ff55;
   --mu-special-folder-color: #000;
   --mu-suggestion-color: #00a3ff;
@@ -1276,12 +1262,6 @@ body:not(.is-mobile) button:not(.mod-cta, .clickable-icon.view-action, .clickabl
   --mu-external-link-hover: #00a3ff;
   --mu-code-attribute: #e50000;
   --mu-input-bg-color: #fff;
-  --mu-label-h1: #bf72d8;
-  --mu-label-h2: #bf72d8;
-  --mu-label-h3: #bf72d8;
-  --mu-label-h4: #bf72d8;
-  --mu-label-h5: #bf72d8;
-  --mu-label-h6: #bf72d8;
   --mu-caret-color: #d300ff;
   /* Code */
   --code-white-space: pre-wrap;
@@ -3885,79 +3865,6 @@ input[type=date] {
   font-weight: var(--font-bold);
 }
 
-/* Line highlight */
-.line-highlight-border-default {
-  --mu-line-highlight-border: transparent;
-}
-
-.line-highlight-border-blue {
-  --mu-line-highlight-border: #007fff48;
-}
-
-.line-highlight-border-green {
-  --mu-line-highlight-border: #00cf0048;
-}
-
-.line-highlight-border-orange {
-  --mu-line-highlight-border: #ff7f0048;
-}
-
-.line-highlight-border-yellow {
-  --mu-line-highlight-border: #ffd70048;
-}
-
-.line-highlight-border-red {
-  --mu-line-highlight-border: #ff000048;
-}
-
-.line-highlight-border-purple {
-  --mu-line-highlight-border: #bf00ff48;
-}
-
-.line-highlight-border-pink {
-  --mu-line-highlight-border: #ff00a348;
-}
-
-.line-highlight-border-gray {
-  --mu-line-highlight-border: #a3a3a348;
-}
-
-.line-highlight-background-default {
-  --mu-line-highlight-background: transparent;
-}
-
-.line-highlight-background-blue {
-  --mu-line-highlight-background: #007fff20;
-}
-
-.line-highlight-background-green {
-  --mu-line-highlight-background: #00cf0020;
-}
-
-.line-highlight-background-orange {
-  --mu-line-highlight-background: #ff7f0020;
-}
-
-.line-highlight-background-yellow {
-  --mu-line-highlight-background: #ffd70020;
-}
-
-.line-highlight-background-red {
-  --mu-line-highlight-background: #ff000020;
-}
-
-.line-highlight-background-purple {
-  --mu-line-highlight-background: #bf00ff20;
-}
-
-.line-highlight-background-pink {
-  --mu-line-highlight-background: #ff00a320;
-}
-
-.line-highlight-background-gray {
-  --mu-line-highlight-background: #a3a3a320;
-}
-
 body:not(.is-mobile) .view-header-title-container.mod-at-start,
 body:not(.is-mobile) .status-bar-item.plugin-word-count {
   -webkit-app-region: var(--mu-header-title-drag);
@@ -4131,36 +4038,6 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6::before {
   visibility: hidden;
   letter-spacing: 1px;
   -webkit-text-stroke: 0;
-}
-
-body:not(.mu-hide-heading-labels) .markdown-reading-view h1::before {
-  content: "H1 ";
-  color: var(--mu-label-h1);
-}
-
-body:not(.mu-hide-heading-labels) .markdown-reading-view h2::before {
-  content: "H2 ";
-  color: var(--mu-label-h2);
-}
-
-body:not(.mu-hide-heading-labels) .markdown-reading-view h3::before {
-  content: "H3 ";
-  color: var(--mu-label-h3);
-}
-
-body:not(.mu-hide-heading-labels) .markdown-reading-view h4::before {
-  content: "H4 ";
-  color: var(--mu-label-h4);
-}
-
-body:not(.mu-hide-heading-labels) .markdown-reading-view h5::before {
-  content: "H5 ";
-  color: var(--mu-label-h5);
-}
-
-body:not(.mu-hide-heading-labels) .markdown-reading-view h6::before {
-  content: "H6 ";
-  color: var(--mu-label-h6);
 }
 
 body:not(.mu-hide-heading-labels) .markdown-reading-view h1:hover::before,
@@ -6771,7 +6648,7 @@ span.cm-highlight {
 /* Style Settings */
 
 /* @settings
-name: MagicUser theme
+name: MagicUser Neon Night theme
 id: magicuser-neon-night-theme
 settings:
     -
@@ -8636,82 +8513,6 @@ settings:
         level: 2
         collapsed: true
     -
-        id: magicuser-theme-line-highlight
-        title: Line highlight
-        type: heading
-        level: 3
-        collapsed: true
-    -
-        id: mu-line-highlight-border
-        title: Line highlight border color
-        type: class-select
-        description: Border color of the active line.
-        allowEmpty: false
-        default: line-highlight-border-default
-        options:
-            - 
-                label: No border
-                value: line-highlight-border-default
-            - 
-                label: Blue border
-                value: line-highlight-border-blue
-            - 
-                label: Green border
-                value: line-highlight-border-green
-            - 
-                label: Orange border
-                value: line-highlight-border-orange
-            - 
-                label: Yellow border
-                value: line-highlight-border-yellow
-            - 
-                label: Red border
-                value: line-highlight-border-red
-            - 
-                label: Purple border
-                value: line-highlight-border-purple
-            - 
-                label: Pink border
-                value: line-highlight-border-pink
-            - 
-                label: Gray border
-                value: line-highlight-border-gray
-    -
-        id: mu-line-highlight-background
-        title: Line highlight background color
-        type: class-select
-        description: Background color of the active line.
-        allowEmpty: false
-        default: line-highlight-background-default
-        options:
-            - 
-                label: No background
-                value: line-highlight-background-default
-            - 
-                label: Blue background
-                value: line-highlight-background-blue
-            - 
-                label: Green background
-                value: line-highlight-background-green
-            - 
-                label: Orange background
-                value: line-highlight-background-orange
-            - 
-                label: Yellow background
-                value: line-highlight-background-yellow
-            - 
-                label: Red background
-                value: line-highlight-background-red
-            - 
-                label: Purple background
-                value: line-highlight-background-purple
-            - 
-                label: Pink background
-                value: line-highlight-background-pink
-            - 
-                label: Gray background
-                value: line-highlight-background-gray
-    -
         id: magicuser-theme-reading-indicator
         title: Reading mode
         type: heading
@@ -8751,60 +8552,6 @@ settings:
         title: Hide headings labels 
         description: Hide headings labels.
         type: class-toggle
-    -
-        id: mu-label-h1
-        title: H1 label color
-        type: variable-themed-color
-        description: Reading mode - H1 label color.
-        format: hex
-        opacity: false
-        default-light: '#bf72d8'
-        default-dark: '#a35fbf'
-    -
-        id: mu-label-h2
-        title: H2 label color
-        type: variable-themed-color
-        description: Reading mode - H2 label color.
-        format: hex
-        opacity: false
-        default-light: '#bf72d8'
-        default-dark: '#a35fbf'
-    -
-        id: mu-label-h3
-        title: H3 label color
-        type: variable-themed-color
-        description: Reading mode - H3 label color.
-        format: hex
-        opacity: false
-        default-light: '#bf72d8'
-        default-dark: '#a35fbf'
-    -
-        id: mu-label-h4
-        title: H4 label color
-        type: variable-themed-color
-        description: Reading mode - H4 label color.
-        format: hex
-        opacity: false
-        default-light: '#bf72d8'
-        default-dark: '#a35fbf'
-    -
-        id: mu-label-h5
-        title: H5 label color
-        type: variable-themed-color
-        description: Reading mode - H5 label color.
-        format: hex
-        opacity: false
-        default-light: '#bf72d8'
-        default-dark: '#a35fbf'
-    -
-        id: mu-label-h6
-        title: H6 label color
-        type: variable-themed-color
-        description: Reading mode - H6 label color.
-        format: hex
-        opacity: false
-        default-light: '#bf72d8'
-        default-dark: '#a35fbf'
     -
         id: magicuser-theme-hide-ui-elements
         title: Hide UI elements
