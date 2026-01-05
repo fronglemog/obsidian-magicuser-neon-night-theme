@@ -701,10 +701,6 @@ body {
 
   --mu-gallery-callout-icon: '<svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --><path d="m304 45c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142zm-245 240c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142zm245 0c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142z" fill="#00a3ffcf" stroke="none" stroke-width="0"/><path d="m61 47h142c12 0 22 10 22 23v140c0 13-10 23-22 23h-142c-12 0-22-10-22-23v-140c0-13 10-23 22-23z" fill="currentColor" stroke="none" stroke-width="0"/></svg>';
 
-  --mu-reading-indicator-color: #007fffa3;
-  --mu-reading-indicator-width-value-rem: 0.3;
-  --mu-reading-indicator-width: calc(var(--mu-reading-indicator-width-value-rem) * -1rem);
-
   --mu-indent-color-level-1: #007fff7f;
   --mu-indent-color-level-2: #d372ff7f;
   --mu-indent-color-level-3: #ff7f007f;
@@ -4002,53 +3998,6 @@ body:not(.is-mobile) .inline-title:hover {
 
 /* Reading mode */
 
-.markdown-reading-view>div>div>div:not(.mod-header, .obsidian-banner-wrapper):hover {
-  box-shadow: var(--mu-reading-indicator-width) 0 0 0 var(--mu-reading-indicator-color);
-}
-
-body:not(.mu-hide-heading-labels) .markdown-reading-view h1,
-body:not(.mu-hide-heading-labels) .markdown-reading-view h2,
-body:not(.mu-hide-heading-labels) .markdown-reading-view h3,
-body:not(.mu-hide-heading-labels) .markdown-reading-view h4,
-body:not(.mu-hide-heading-labels) .markdown-reading-view h5,
-body:not(.mu-hide-heading-labels) .markdown-reading-view h6 {
-  position: relative;
-}
-
-body:not(.mu-hide-heading-labels) .markdown-reading-view h1:active,
-body:not(.mu-hide-heading-labels) .markdown-reading-view h2:active,
-body:not(.mu-hide-heading-labels) .markdown-reading-view h3:active,
-body:not(.mu-hide-heading-labels) .markdown-reading-view h4:active,
-body:not(.mu-hide-heading-labels) .markdown-reading-view h5:active,
-body:not(.mu-hide-heading-labels) .markdown-reading-view h6:active {
-  --mu-label-visible: hidden;
-}
-
-body:not(.mu-hide-heading-labels) .markdown-reading-view h1::before,
-body:not(.mu-hide-heading-labels) .markdown-reading-view h2::before,
-body:not(.mu-hide-heading-labels) .markdown-reading-view h3::before,
-body:not(.mu-hide-heading-labels) .markdown-reading-view h4::before,
-body:not(.mu-hide-heading-labels) .markdown-reading-view h5::before,
-body:not(.mu-hide-heading-labels) .markdown-reading-view h6::before {
-  font-size: .8rem;
-  font-family: var(--mu-font-ui);
-  position: absolute;
-  top: -1rem;
-  left: 0;
-  visibility: hidden;
-  letter-spacing: 1px;
-  -webkit-text-stroke: 0;
-}
-
-body:not(.mu-hide-heading-labels) .markdown-reading-view h1:hover::before,
-body:not(.mu-hide-heading-labels) .markdown-reading-view h2:hover::before,
-body:not(.mu-hide-heading-labels) .markdown-reading-view h3:hover::before,
-body:not(.mu-hide-heading-labels) .markdown-reading-view h4:hover::before,
-body:not(.mu-hide-heading-labels) .markdown-reading-view h5:hover::before,
-body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
-  visibility: var(--mu-label-visible);
-}
-
 /* Settings */
 .vertical-tab-header-group {
   padding-top: 0;
@@ -6557,10 +6506,6 @@ body.mu-global-font-mode {
   transform: scale(var(--mu-collapse-icon-size));
 }
 
-.mu-hide-reading-indicator {
-  --mu-reading-indicator-width: 0;
-}
-
 body.mu-hide-indent-guides {
   --indentation-guide-width: 0;
   --indentation-guide-color: transparent;
@@ -8512,46 +8457,6 @@ settings:
         description: UI modes, line highlight, laser and more.
         level: 2
         collapsed: true
-    -
-        id: magicuser-theme-reading-indicator
-        title: Reading mode
-        type: heading
-        level: 3
-        collapsed: true
-    -
-        id: magicuser-theme-reading-indicator
-        title: Reading indicator and labels
-        type: heading
-        level: 4
-        collapsed: true
-    - 
-        id: mu-reading-indicator-color
-        title: Reading indicator color
-        type: variable-themed-color
-        description: Color of the reading indicator.
-        format: hex
-        opacity: true
-        default-light: '#007fffa3'
-        default-dark: '#007fffa3'
-    - 
-        id: mu-reading-indicator-width-value-rem
-        title: Reading indicator width
-        description: Select reading indicator width (0 = no indicator).
-        type: variable-number-slider
-        default: 0.3
-        min: 0
-        max: 1
-        step: 0.05
-    -
-        id: mu-hide-reading-indicator
-        title: Hide reading indicator 
-        description: Hide reading indicator.
-        type: class-toggle
-    -
-        id: mu-hide-heading-labels
-        title: Hide headings labels 
-        description: Hide headings labels.
-        type: class-toggle
     -
         id: magicuser-theme-hide-ui-elements
         title: Hide UI elements
