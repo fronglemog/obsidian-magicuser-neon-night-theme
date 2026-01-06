@@ -1,7 +1,17 @@
 {
     "name": "obsidian-magicuser-neon-night-theme",
     "version": "1.0.0",
+    "author": "fronglemog",
+    "description": "",
+    "keywords": [],
+    "license": "MIT",
+    "packageManager": "pnpm@10.26.1",
+    "type": "module",
 	"scripts": {
 		"version": "node version-bump.mjs && git add manifest.json versions.json"
-	}
+	},
+  "devDependencies": {
+    "stylelint" : "16.26.1",
+    "stylelint-config-standard": "39.0.1"
+  }
 }
